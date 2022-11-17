@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Varela Round", sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+$pink: #e0afa0;
+$color1: #f4f3ee;
+$color2: #bcb8b1;
+$color3: #8a817c;
+$color4: #463f3a;
+$color5: #2c2927;
+
+body {
+  background-color: $color4;
+}
+
+.game_layout {
+  width: 100%;
+  height: calc(100% - 50px);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}

@@ -1,0 +1,54 @@
+@import "./../../index.scss";
+
+.game_table {
+  width: fit-content;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 54px;
+  margin-top: 20px;
+
+  .failed {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000a1;
+    backdrop-filter: blur(9px);
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: linear 240ms;
+
+    &.visible {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    p {
+      font-size: 2rem;
+      padding: 10px 30px;
+      border-radius: 10px;
+      background: #17638f;
+      color: white;
+
+      span {
+        padding: 0px 5px;
+        background-color: #178f47;
+        border-radius: 5px;
+        color: black;
+      }
+    }
+  }
+}
